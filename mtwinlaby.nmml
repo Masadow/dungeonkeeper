@@ -25,7 +25,7 @@
 		
 	</assets>
 	
-	<assets path="assets" if="flash" >
+	<assets path="assets">
 		<sound path="data/beep.mp3" id="Beep" />
 		<sound path="construction.mp3" id="construction.mp3" />
 		<sound path="attack.mp3" id="attack.mp3" />

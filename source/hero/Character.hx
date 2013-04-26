@@ -50,9 +50,15 @@ class Character extends FlxSprite
 			play("default");
 	}
 	
+	#if flash
 	public override function calcFrame()
 	{
 		super.calcFrame();
+	#else
+	public override function calcFrame(AreYouSure:Bool = false)
+	{
+		super.calcFrame(AreYouSure);
+	#end
 		//Draw health bars
 		var gfx:Graphics = FlxG.flashGfx;
 		gfx.clear();

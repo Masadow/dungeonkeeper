@@ -17,7 +17,11 @@ class Map
 		
 	public function new() 
 	{
+		#if flash
 		content = new Vector<Int>(width * height, true);
+		#else
+		content = new Vector<Int>();
+		#end
 		reset();
 	}
 	
